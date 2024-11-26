@@ -7,10 +7,10 @@
     <body>
         <h1>新規登録確認テスト</h1>
         <div>
-            <p>[[${user.groupName}]]</p>
-            <p>[[${user.mail}]]</p>
-            <p>[[${user.password}]]</p>
-            <p><a href="http://localhost:8080/">新規登録画面へ</p>
+            <p th:text="${group.groupName}"></p>
+            <p th:text="${group.mail}"></p>
+            <p th:text="${group.password}"></p>
+            <p><a th:href="@{/}">新規登録画面へ</a></p>
         </div>
     </body>
 </html>

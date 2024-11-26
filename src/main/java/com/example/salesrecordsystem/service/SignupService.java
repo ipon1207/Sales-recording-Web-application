@@ -3,7 +3,7 @@ package com.example.salesrecordsystem.service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.salesrecordsystem.model.User;
+import com.example.salesrecordsystem.model.Groups;
 import com.example.salesrecordsystem.repository.SignupRepository;
 
 @Service
@@ -13,7 +13,7 @@ public class SignupService {
     SignupRepository repository;
 
     // データベースに値を登録
-    public void insert(User user) {
-        repository.save(user);
+    public void insert(Groups group) {
+        repository.save(group);
     }
 }

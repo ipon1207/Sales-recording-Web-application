@@ -1,6 +1,6 @@
 package com.example.salesrecordsystem.model;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -12,8 +12,8 @@ import lombok.Data;
 
 @Data
 @Entity
-@Table(name = "users")
-public class User {
+@Table(name = "groups")
+public class Groups {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -29,6 +29,6 @@ public class User {
     @Column(name = "password")
     private String password;
     
-    @Column(name = "created_at")
-    private Date createdAt;
+    @Column(name = "created_at", nullable = false, updatable = false)
+    private LocalDateTime createdAt;
 }

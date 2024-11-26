@@ -5,12 +5,12 @@
         <title>ユーザー新規登録</title>
     </head>
     <body>
-        <!-- SignupController.javaへ入力値を渡す -->
         <h1>ユーザー新規登録</h1>
-        <form method="post" th:action="{@/signup}" th:object="${user}">
-            団体名 : <input type="text" th:field="*{groupName}"/><br>
-            メールアドレス : <input type="text" th:field="*{mail}"/><br>
-            パスワード : <input type="text" th:field="*{password}"/><br>
+        <form method="post" th:action="@{/signup}" th:object="${group}">
+            団体名 : <input type="text" th:field="*{groupName}" required/><br>
+            メールアドレス : <input type="email" th:field="*{mail}" required/><br>
+            パスワード : <input type="password" th:field="*{password}" required/><br>
+            <button type="submit">登録</button>
         </form>
     </body>
 </html>
