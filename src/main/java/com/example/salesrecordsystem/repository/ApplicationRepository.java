@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 import com.example.salesrecordsystem.model.Groups;
 
 @Repository
-public interface SignupRepository extends JpaRepository<Groups, Integer> {
+public interface ApplicationRepository extends JpaRepository<Groups, Integer> {
     
 }
