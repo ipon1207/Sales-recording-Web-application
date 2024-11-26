@@ -22,6 +22,6 @@ public class SignupController {
         // 入力値をデータベースに登録
         service.insert(user);
 
-        return "result";
+        return "signup_result";
     }
 }
