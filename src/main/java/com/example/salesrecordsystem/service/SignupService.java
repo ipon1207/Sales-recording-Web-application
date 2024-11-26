@@ -12,7 +12,7 @@ public class SignupService {
     @Autowired
     SignupRepository repository;
 
-    // データベースの値を登録
+    // データベースに値を登録
     public void insert(User user) {
         repository.save(user);
     }
