@@ -23,12 +23,12 @@ public class User {
     @Column(name = "group_name")
     private String groupName;
 
-    @Column(name = "password")
-    private String password;
-
     @Column(name = "mail")
     private String mail;
 
+    @Column(name = "password")
+    private String password;
+    
     @Column(name = "created_at")
     private Date createdAt;
 }
