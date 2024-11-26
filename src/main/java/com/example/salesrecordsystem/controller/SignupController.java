@@ -18,7 +18,7 @@ public class SignupController {
     @Autowired
     SignupService service;
     
-    @GetMapping("/")
+    @GetMapping("/signup")
     public String getRoot(Model model) {
         model.addAttribute("group", new Groups()); 
         // signup.htmlへ画面遷移

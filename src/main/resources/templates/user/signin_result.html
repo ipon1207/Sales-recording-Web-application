@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>ログインテスト</title>
+    </head>
+    <body>
+        <h1>ログインテスト</h1>
+        <div>
+            <p th:text="${group.groupName}"></p>
+            <p th:text="${group.mail}"></p>
+            <p th:text="${group.password}"></p>
+            <p><a th:href="@{/}">ログイン画面</a></p>
+        </div>
+    </body>
+</html>
