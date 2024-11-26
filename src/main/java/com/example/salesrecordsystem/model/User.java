@@ -17,23 +17,17 @@ public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "user_id")
-    private Integer userId;
-
-    @Column(name = "user_name")
-    private String userName;
+    @Column(name = "group_id")
+    private Integer groupId;
+    
+    @Column(name = "group_name")
+    private String groupName;
 
     @Column(name = "password")
     private String password;
 
     @Column(name = "mail")
     private String mail;
-
-    @Column(name = "group_id")
-    private Integer groupId;
-
-    @Column(name = "group_name")
-    private String groupName;
 
     @Column(name = "created_at")
     private Date createdAt;
