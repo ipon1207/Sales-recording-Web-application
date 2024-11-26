@@ -5,6 +5,7 @@
         <title>ユーザー新規登録</title>
     </head>
     <body>
+        <!-- SignupController.javaへ入力値を渡す -->
         <h1>ユーザー新規登録</h1>
         <form method="post" th:action="{@/signup}" th:object="${user}">
             団体名 : <input type="text" th:field="*{groupName}"/><br>
