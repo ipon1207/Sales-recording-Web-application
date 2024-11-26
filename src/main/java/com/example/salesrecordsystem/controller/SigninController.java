@@ -18,6 +18,7 @@ public class SigninController {
     
     @GetMapping("/")
     public String getRoot(Model model) {
+        // ログイン情報を格納するモデル
         model.addAttribute("group", new Groups());
         // signin.htmlに画面遷移
         return "user/signin";
@@ -28,10 +29,11 @@ public class SigninController {
 
         // 検索結果
         Groups result_group = new Groups();
-        
+
         // 入力されたパスワードでテーブル検索
         result_group = service.searchOne(groups.getPassword());
 
+        // 検索結果をhtmlに表示させるモデル
         model.addAttribute("group", result_group);
 
         // signin_result.htmlに遷移
